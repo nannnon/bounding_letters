@@ -24,6 +24,11 @@ void setup()
   addLetters("ワクワクする", 50, color(random(256), random(256), random(256)), div + 140, 280);
   addLetters("圧倒的感謝", 50, color(random(256), random(256), random(256)), div + 240, 330);
   addLetters("素晴らしい", 50, color(random(256), random(256), random(256)), div + 200, 400);
+  
+  fill(0, 0, 0);
+  rect(0, 0, width / 2, height);
+  fill(255, 255, 255);
+  rect(width / 2, 0, width / 2, height);
 }
 
 void addLetters(String letters, float ls, color lc, float x, float y)
@@ -48,4 +53,6 @@ void draw()
     bl.update();
     bl.display();
   }
+  
+  //saveFrame("######.png");
 }
